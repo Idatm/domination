@@ -1,16 +1,17 @@
-
+package projet;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class CSVRead {
+	/** Plus besoin de cette classe car pas le droit 2 main  !!**/
 
 	public static void main(String[] args) throws Exception
 	{
 		BufferedReader CSVFile = new BufferedReader(new FileReader("dominos.csv"));
 		String dataRow = CSVFile.readLine(); /** Lit la première ligne**/
 		
-		/** La boucle while vérifie si les données sont nules. 
+		/** La boucle while vérifie si les données sont nulles. 
 		 * Si elles le sont, on atteint directement la fin du fichier
 		 * Sinon, on continue de le lire
 		 */
