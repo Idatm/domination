@@ -15,10 +15,7 @@
 			this.facePaysageDroite = type1;
 			this.facePaysageGauche = type2;
 			this.orientation = orientation;
-			
-	
-			
-			
+
 		}
 		
 		// retourne la face numéro du domino
@@ -45,7 +42,7 @@
 			return orientation;
 		}
 		
-		
+
 		
 	
 	 
