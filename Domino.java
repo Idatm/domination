@@ -5,7 +5,7 @@
 		int faceNumero;
 		String facePaysageDroite;
 		String facePaysageGauche;
-		/**boolean nombreCouronne1 = false;  boolÈen car la rÈponse est soit oui soit non donc soit 1 soit 0
+		/**boolean nombreCouronne1 = false;  bool√©en car la r√©ponse est soit oui soit non donc soit 1 soit 0
 		boolean nombreCouronne2 = false; **/
 		int nombreCouronne1;
 		int nombreCouronne2;
@@ -13,7 +13,7 @@
 	
 		String orientation;
 		
-		/* CrÈation du constructeur*/
+		/* Cr√©ation du constructeur*/
 		Domino(int faceNumero,	String type1, String type2,String orientation, int couronne1, int couronne2)
 		{
 			this.faceNumero = faceNumero;
@@ -27,26 +27,32 @@
 			
 		}
 		
-		// retourne la face numÈro du domino
+		// retourne la face num√©ro du domino
 		public int getFaceNumero() 
 		{
 			return faceNumero;
 		}
 		
-		// retourne le cÙtÈ droit de la face paysage du domino
+		// retourne le c√¥t√© droit de la face paysage du domino
 		public String getfacePaysageDroite() 
 		{
 			return facePaysageDroite;
 		}
 	
-		// retourne le cÙtÈ gauche de la face paysage du domino
+		// retourne le c√¥t√© gauche de la face paysage du domino
 		public String getfacePaysageGauche() 
 		{
 			return facePaysageGauche;
 		}
 		
 		// retourne l'orientation du domino
-		public String getOrientation() 
+		public String getOrientation() // il faut d√©finir une orientation en 2D : 4 possibilit√©s : haut droite bas gauche
+						//									          [2,	
+						// Chaque domino est divis√© en 2 demis dominos : [1,2] donc 4 possibilit√©s:        1]
+						//								             [2,1]   [1,2]    d
+						//									          [1,
+						//									           2]
+						// Utilisons des 
 		{
 			return orientation;
 		}
@@ -62,14 +68,14 @@
 				{
 					return nombreCouronne2;
 				}
-		// DÈfinit le nombre de couronne1
+		// D√©finit le nombre de couronne1
 		void setCouronne1(int nombre) 
 		{
 			 nombreCouronne1 += nombre;
 	
 		}
 		
-		// DÈfinit le nombre de couronne2
+		// D√©finit le nombre de couronne2
 	     void setCouronne2(int nombre) 
 		{
 			 nombreCouronne2 += nombre;
